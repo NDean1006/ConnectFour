@@ -1,4 +1,15 @@
 /* game board table */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  background-image: url(connect-four-background.jpg);
+}
+
 
 #board td {
   width: 50px;
@@ -9,7 +20,6 @@
   border: 1px solid black;
   align-items: center;
   background-size: cover;
-  opacity: .9;
   border-radius: 15%;
   
 }
@@ -83,7 +93,7 @@
 }
 
 .grid {
-  top: 50px;
+  margin-top: 300px;
   position: relative;
   left: 50%;
   margin-left: -350px;
@@ -94,7 +104,7 @@
   padding: 1.5rem;
   align-items: center;
   background-size: cover;
-  opacity: .9;
-  background-color: rgba(252, 255, 49, 0.842);
+  background-color: rgb(252, 255, 49);
 }
+
 

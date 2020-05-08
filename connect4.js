@@ -27,6 +27,7 @@ function makeBoard() {
 function makeHtmlBoard() {
   // TODO: get "htmlBoard" variable from the item in HTML w/ID of "board"
   let htmlBoard = document.getElementById("board");
+  htmlBoard.classList.add("grid");
   // TODO: add comment for this code
   let top = document.createElement("tr"); // create table row html element 
   
@@ -80,7 +81,7 @@ function placeInTable(y, x) {
 
 function endGame(msg) {
   // TODO: pop up alert message
-  alert(msg);
+  alert(msg)
 }
 
 /** handleClick: handle click of column top to play piece */
