@@ -4,6 +4,13 @@
   width: 50px;
   height: 50px;
   border: solid 1px #666;
+  margin:  auto;
+  padding-left: 8px;
+  border: 1px solid black;
+  align-items: center;
+  background-size: cover;
+  opacity: .9;
+  border-radius: 15%;
   
 }
 
@@ -25,14 +32,69 @@
 .p2{
   background-color: blue;
 }
+/* player indicators  */
+.playerOne {
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	color:#ffffff;
+	padding:7px 25px;
+	text-decoration:none;
+	
+}
 
+.playerTwo {
+	background:linear-gradient(to bottom, blue 5%, rgb(58, 58, 255) 100%);
+	background-color:blue;
+	border-radius:18px;
+	border:1px solid blue;
+	color:#ffffff;
+	padding:7px 25px;
+  text-decoration:none;
+  float: right;
+    
+}
 /* column-top is table row of clickable areas for each column */
 
-#column-top td {
+#column-top-red td {
   border: dashed 1px lightgray;
 }
 
-#column-top td:hover {
-  background-color: gold;
+#column-top-red td:hover {
+  margin: px;
+  border-radius: 50%;
+  background-color: red;
+  border: 10px solid rgb(252, 255, 49);
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top-blue td {
+  border: dashed 1px lightgray;
+}
+
+#column-top-blue td:hover {
+  margin: px;
+  border-radius: 50%;
+  background-color: blue;
+  border: 10px solid rgb(252, 255, 49);
+}
+
+.grid {
+  top: 50px;
+  position: relative;
+  left: 50%;
+  margin-left: -350px;
+  width: 700px;
+  height: 600px;
+  border-radius: 5%;
+  border: 1px solid black;
+  padding: 1.5rem;
+  align-items: center;
+  background-size: cover;
+  opacity: .9;
+  background-color: rgba(252, 255, 49, 0.842);
 }
 

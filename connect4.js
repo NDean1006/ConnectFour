@@ -29,7 +29,8 @@ function makeHtmlBoard() {
   let htmlBoard = document.getElementById("board");
   // TODO: add comment for this code
   let top = document.createElement("tr"); // create table row html element 
-  top.setAttribute("id", "column-top"); // set the id atribute of top table row to "column-top"
+  
+  top.setAttribute("id", "column-top-red"); // set the id atribute of top table row to "column-top"
   top.addEventListener("click", handleClick); // make top tr element exxecute handleClick funbcftion on click event 
 
   for (let x = 0; x < WIDTH; x++) { // loop fucntion for total width of board
@@ -70,8 +71,6 @@ function placeInTable(y, x) {
   const piece = document.createElement('div');
   piece.classList.add('piece');
   piece.classList.add(`p${currPlayer}`);
-  //piece.style.top = -50 * (y + 2);
-
   const spot = document.getElementById(`${y}-${x}`);
   spot.append(piece);
   
@@ -114,6 +113,15 @@ function handleClick(evt) {
   // switch players
   // TODO: switch currPlayer 1 <-> 2
   currPlayer = currPlayer === 1 ? 2 : 1;
+  // Toggle hover Icon by currPlayer 
+  if (currPlayer !=  1){
+    let top = document.getElementById("column-top-red");
+    top.setAttribute("id", "column-top-blue"); 
+  } else {
+    let top = document.getElementById("column-top-blue");
+    top.setAttribute("id", "column-top-red");
+  }
+  
 }
 
 /** checkForWin: check board cell-by-cell for "does a win start here?" */
