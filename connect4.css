@@ -42,30 +42,8 @@ body {
 .p2{
   background-color: blue;
 }
-/* player indicators  */
-.playerOne {
-	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-	background-color:#c62d1f;
-	border-radius:18px;
-	border:1px solid #d02718;
-	display:inline-block;
-	color:#ffffff;
-	padding:7px 25px;
-	text-decoration:none;
-	
-}
 
-.playerTwo {
-	background:linear-gradient(to bottom, blue 5%, rgb(58, 58, 255) 100%);
-	background-color:blue;
-	border-radius:18px;
-	border:1px solid blue;
-	color:#ffffff;
-	padding:7px 25px;
-  text-decoration:none;
-  float: right;
-    
-}
+
 /* column-top is table row of clickable areas for each column */
 
 #column-top-red td {
